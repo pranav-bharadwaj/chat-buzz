@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="1"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="32sp"
+                android:text="@string/signup_text1"
+                android:textColor="#52504a"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="26sp"
+                android:textColor="#C8C6C6"
+                android:layout_marginTop="-4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/signup_desc" />
+
+            <GridLayout
+                android:layout_width="350dp"
+                android:layout_height="484dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27pt"
+                android:useDefaultMargins="true"
+                android:columnCount="1"
+                android:rowCount="3"
+
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outline1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label1"
+                    app:startIconDrawable="@drawable/accountperson"
+                    app:startIconTint="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outline2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    app:endIconCheckable="true"
+                    app:startIconDrawable="@drawable/locked"
+
+                    app:startIconTint="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/input_margin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outline3"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirmpass"
+                    app:endIconCheckable="true"
+                    app:startIconDrawable="@drawable/locked"
+                    android:layout_marginBottom="@dimen/input_margin"
+                    app:startIconTint="@color/colorPrimary">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/containedButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="350dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/signupbtn"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    app:backgroundTint="#2070E8"
+                    android:layout_marginBottom="@dimen/input_margin"
+                    />
+
+
+
+                <GridLayout android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/roboto_mono_medium"
+                        android:text="@string/loginacc"
+                        android:textFontWeight="700" />
+
+                    <TextView
+                        android:fontFamily="@font/roboto_mono_medium"
+                        android:text="@string/reghere"
+                        android:textColor="#f57b31" />
+                </GridLayout>
+
+                <TextView android:id="@+id/text_login" />
+            </GridLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

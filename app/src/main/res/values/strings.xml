@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Chat Buzz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="login_text1">Welcome,</string>
+    <string name="login_desc">Sign in to continue!</string>
+    <string name="label1">Enter email</string>
+    <string name="loginbtn1">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="loginacc">Don\'t have an account?</string>
+    <string name="reghere">" Register"</string>
+    <string name="password">Password</string>
+    <string name="signup_text1">Create Account,</string>
+    <string name="signup_desc">Sign up to get started!</string>
+    <string name="confirmpass">Confirm password</string>
+    <string name="signupbtn">Create account</string>
+</resources>
